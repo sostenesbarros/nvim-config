@@ -13,6 +13,8 @@ lsp.on_attach(function(_, bufnr)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { buffer = bufnr, desc = "[C]ode [A]ction" })
 end)
 
+lsp.skip_server_setup({ 'jdtls' })
+
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()

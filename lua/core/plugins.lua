@@ -46,6 +46,9 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- JDTLS
+  use 'mfussenegger/nvim-jdtls'
+
   -- DAP
   use 'mfussenegger/nvim-dap'
   use 'rcarriga/nvim-dap-ui'
