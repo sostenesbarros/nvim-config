@@ -30,3 +30,6 @@ end
 
 -- DAP Go setup
 require('dap-go').setup()
+
+-- DAP python setup
+require('dap-python').setup('~/.virtualenvs/debugpy/bin/python3')

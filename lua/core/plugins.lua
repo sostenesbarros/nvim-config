@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
       -- Autocompletion
       { 'hrsh7th/nvim-cmp' },     -- Required
       { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+      { 'jose-elias-alvarez/null-ls.nvim' },
       { 'L3MON4D3/LuaSnip' },     -- Required
     }
   }
@@ -54,6 +55,7 @@ return require('packer').startup(function(use)
   use 'rcarriga/nvim-dap-ui'
   use 'theHamsta/nvim-dap-virtual-text'
   use 'leoluz/nvim-dap-go'
+  use 'mfussenegger/nvim-dap-python'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
