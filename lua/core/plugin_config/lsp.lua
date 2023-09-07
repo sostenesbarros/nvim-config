@@ -35,3 +35,14 @@ null_ls.setup({
     null_ls.builtins.formatting.black,
   }
 })
+
+require('mason-lspconfig').setup({
+  ensure_installed = {
+    'pyright',
+    'rust_analyzer',
+    'lua_ls',
+    'gopls',
+    'jdtls',
+    'tsserver'
+  }
+})
