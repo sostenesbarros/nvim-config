@@ -1,5 +1,3 @@
-require("catppuccin").setup({
-  no_italic = true
-})
+require("catppuccin").setup()
 
 vim.cmd.colorscheme "catppuccin-mocha"
